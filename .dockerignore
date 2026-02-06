@@ -1,0 +1,32 @@
+# Dependencias locales (se instalan dentro del contenedor)
+node_modules
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Git (no hace falta dentro de la imagen)
+.git
+.gitignore
+
+# GitHub Actions / CI (no hace falta dentro del contenedor)
+.github
+
+# Variables de entorno (nunca deben ir dentro de la imagen)
+.env
+.env.*
+
+# Docs / extras (no afectan a ejecutar la app)
+README.md
+*.md
+
+# Archivos del propio Docker
+Dockerfile
+.dockerignore
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode
